@@ -1,0 +1,90 @@
+@font-face {
+    font-family: tuz;
+    src: url(Fonts/UKIJTuz.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    outline: none;
+    font-family: tuz;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+body{
+    background: #fff;
+    font-size: 15px;
+    direction: rtl;
+}
+
+.header{
+    text-align: center;
+}
+
+.logo img{
+    width: 300px;
+    height: 150px;
+}
+
+.search-input{
+    width: 350px;
+    border: 1px solid #ccc;
+    padding: 15px 45px 15px 15px;
+    background: url(Resimler/loupe.png) center right 15px no-repeat;
+    background-size: 20px;
+    border-radius: 35px;
+}
+
+.menu{
+    background: #222;
+    margin-top: 15px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.menu a:hover{
+    background: red;
+}
+
+.content{
+    width: 1200px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    padding: 25px;
+    margin: 30px auto;
+}
+
+.items{
+    box-shadow: 0 0 10px #ccc;
+    margin: 15px;
+}
+
+.item-image img{
+    width: 100%;
+    border-radius: 10px;
+    
+}
+
+.item-content{
+    padding: 15px;
+}
+
+.item-text{
+    margin: 0px 5px;
+    color: #666;
+}
+
+.item-tittle{
+    margin: 0px 5px;
+    font-size: 18px;
+}

@@ -1,0 +1,86 @@
+@font-face {
+    font-family: tuz;
+    src: url(Fonts/UKIJTuz.ttf);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: tuz;
+}
+
+.logo img{
+    width: 300px;
+    height: 150px; 
+}
+
+body{
+    background: #fff;
+    font-size: 15px;
+    direction: rtl;
+}
+
+input{
+    direction: rtl;
+    border-right: hidden !important;
+    border-color: #6c757d !important;
+    padding: 10px 0;
+}
+
+button{
+    direction: rtl;
+}
+
+button img{
+    width: 15px;
+    height: 15px;
+}
+
+.input-group{
+    width: 300px;
+}
+
+.header{
+    text-align: center;
+    direction: ltr;
+}
+
+.menu{
+    background: #222;
+    margin-top: 20px;
+
+}
+
+.menu a{
+    text-decoration: none;
+    color: #fff;
+    padding: 15px 30px;
+    display: inline-block;
+}
+
+.menu a:hover{
+    background: red;
+}
+
+
+.card{
+    direction: rtl;
+    box-shadow: 0 0 10px #ccc;
+    margin: 40px 20px 0 20px;
+    padding: 0;
+}
+
+.card p{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.row{
+    margin-left: 0;
+
+}
+
+.btn-outline-secondary{
+    border-left: none;
+}
