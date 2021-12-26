@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="refresh" content="30">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="op">
+
+    </div>
+    <section>
+        <div class="set">
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+        </div>
+        <div class="set set2">
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+        </div>
+        <div class="set set3">
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+            <div><img src="images/autumn/level1.png" class="im1"></div>
+            <div><img src="images/autumn/level2.png" class="im2"></div>
+            <div><img src="images/autumn/level4.png" class="im3"></div>
+            <div><img src="images/autumn/level3.png" class="im4"></div>
+        </div>
+    </section>
+    <script>
+        const lang = navigator.language; 
+        let date = new Date(); 
+
+        let img1 = document.querySelectorAll('.im1');
+        let img2 = document.querySelectorAll('.im2')
+        let img3 = document.querySelectorAll('.im3');
+        let img4 = document.querySelectorAll('.im4');
+
+        let back = document.querySelector('body')
+
+        let month = date.getMonth(); 
+        let monthName = date.toLocaleDateString(lang,{month: 'long'});
+        let sec = date.getSeconds();
+        console.log(sec); 
+        console.log(monthName);
+        let name = 3;
+        
+        if(sec <= 30){
+
+            for (i = 0; i < img1.length; i++) {
+                img1[i].src = "images/winter/level1.png";
+                img2[i].src = "images/winter/level2.png";
+                img3[i].src = "images/winter/level3.png";
+                img4[i].src = "images/winter/level4.png";
+            }
+
+
+            back.setAttribute("style","background: url(images/winter/backgorund.jpg) no-repeat")
+        }
+        
+    </script>
+</body>
+</html>
